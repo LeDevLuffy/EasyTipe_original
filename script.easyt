@@ -1,0 +1,12 @@
+ask(age, "Quel âge as-tu ? (nombre seulement)")
+
+set(age_num, int(age))
+set(majeur, age_num >= 18)
+
+logger("majeur = " + str(majeur))
+
+if(majeur) {
+    logger("Tu es majeur")
+} else {
+    logger("Tu es mineur")
+}
